@@ -23,38 +23,42 @@ void main(void)
     {
         PORTDbits.RD0 = 1; 
         __delay_ms(500);
-        PORTDbits = 0;
+        PORTDbits.RD1 = 0;
         PORTDbits.RD1 = 1;
         __delay_ms(500);
+        PORTDbits.RD1 = 0;
         
         {
-         if(PORTDbits.RD2 = 1)
+         if(PORTDbits.RD2 == 1)
              
          PORTDbits.RD0 = 1; 
         __delay_ms( 1000);
-        PORTDbits = 0;
+        PORTDbits.RD0 = 0;
         PORTDbits.RD1 = 1;
         __delay_ms( 1000);
+        PORTDbits.RD1 = 0;
         
         }
         {
-            if(PORTDbits.RD3 = 1)
+         if(PORTDbits.RD3 == 1)
                 
         PORTDbits.RD0 = 1; 
         __delay_ms( 1000);
-        PORTDbits = 0;
+        PORTDbits.RD0 = 0;
         PORTDbits.RD1 = 1;
         __delay_ms( 1000);
+        PORTDbits.RD1 = 0;
                 
         }
         {
-            if ( PORTDbits.RD2 = 1 PORTDbits.RD3 = 1)
+            if (PORTDbits.RD2 == 1 && PORTDbits.RD3 == 1)
                 
          PORTDbits.RD0 = 1; 
         __delay_ms( 2000);
-        PORTDbits = 0;
+        PORTDbits.RD0 = 0;
         PORTDbits.RD1 = 1;
         __delay_ms( 2000);
+        PORTDbits.RD1 = 0;
         }
     }
     
