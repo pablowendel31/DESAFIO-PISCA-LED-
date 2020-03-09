@@ -8,6 +8,7 @@
 
 #include <xc.h>
 #include "config.h"
+
 void main(void) 
 {
     PORTDbits.RD0 = 0;      //led1
@@ -26,6 +27,35 @@ void main(void)
         PORTDbits.RD1 = 1;
         __delay_ms(500);
         
+        {
+         if(PORTDbits.RD2 = 1)
+             
+         PORTDbits.RD0 = 1; 
+        __delay_ms( 1000);
+        PORTDbits = 0;
+        PORTDbits.RD1 = 1;
+        __delay_ms( 1000);
+        
+        }
+        {
+            if(PORTDbits.RD3 = 1)
+                
+        PORTDbits.RD0 = 1; 
+        __delay_ms( 1000);
+        PORTDbits = 0;
+        PORTDbits.RD1 = 1;
+        __delay_ms( 1000);
+                
+        }
+        {
+            if ( PORTDbits.RD2 = 1 PORTDbits.RD3 = 1)
+                
+         PORTDbits.RD0 = 1; 
+        __delay_ms( 2000);
+        PORTDbits = 0;
+        PORTDbits.RD1 = 1;
+        __delay_ms( 2000);
+        }
     }
     
     return;
